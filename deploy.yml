@@ -26,6 +26,8 @@ spec:
         runAsGroup: 2000
         privileged: false
         runAsNonRoot: True
+        allowPrivilegeEscalation: false
+        readOnlyRootFilesystem: true
       containers:
       - name: conteiner-app
         image: image:v1
