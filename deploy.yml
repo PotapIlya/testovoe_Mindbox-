@@ -28,6 +28,7 @@ spec:
         runAsNonRoot: True
         allowPrivilegeEscalation: false
         readOnlyRootFilesystem: true
+      serviceAccountName: sa-app
       containers:
       - name: conteiner-app
         image: image:v1
